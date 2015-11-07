@@ -27,8 +27,11 @@ public class Ponuda implements java.io.Serializable
    @org.kie.api.definition.type.Label("NastavakPregovora")
    private java.lang.Boolean nastavak_pregovora;
 
-   @org.kie.api.definition.type.Label(value = "Placeno")
+   @org.kie.api.definition.type.Label("Placeno")
    private java.lang.Boolean placeno;
+
+   @org.kie.api.definition.type.Label(value = "Isporuceno")
+   private java.lang.Boolean isporuceno;
 
    public Ponuda()
    {
@@ -104,10 +107,21 @@ public class Ponuda implements java.io.Serializable
       this.placeno = placeno;
    }
 
+   public java.lang.Boolean getIsporuceno()
+   {
+      return this.isporuceno;
+   }
+
+   public void setIsporuceno(java.lang.Boolean isporuceno)
+   {
+      this.isporuceno = isporuceno;
+   }
+
    public Ponuda(java.lang.Long ponudaID, superime.prodajavozila.Kupac kupacID,
          superime.prodajavozila.Vozilo voziloID,
          java.lang.Boolean narudzba_vozila, java.lang.Boolean lager_vozilo,
-         java.lang.Boolean nastavak_pregovora, java.lang.Boolean placeno)
+         java.lang.Boolean nastavak_pregovora, java.lang.Boolean placeno,
+         java.lang.Boolean isporuceno)
    {
       this.ponudaID = ponudaID;
       this.kupacID = kupacID;
@@ -116,6 +130,7 @@ public class Ponuda implements java.io.Serializable
       this.lager_vozilo = lager_vozilo;
       this.nastavak_pregovora = nastavak_pregovora;
       this.placeno = placeno;
+      this.isporuceno = isporuceno;
    }
 
 }
