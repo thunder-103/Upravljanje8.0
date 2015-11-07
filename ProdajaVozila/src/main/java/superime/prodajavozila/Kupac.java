@@ -10,8 +10,93 @@ public class Kupac implements java.io.Serializable
 
    static final long serialVersionUID = 1L;
 
+   @org.kie.api.definition.type.Label(value = "KupacID")
+   private java.lang.Long kupacID;
+   @org.kie.api.definition.type.Label(value = "Ime")
+   private java.lang.String ime;
+   @org.kie.api.definition.type.Label(value = "Prezime")
+   private java.lang.String prezime;
+   @org.kie.api.definition.type.Label(value = "Adresa")
+   private java.lang.String adresa;
+   @org.kie.api.definition.type.Label(value = "OIB")
+   private java.lang.String oib;
+   @org.kie.api.definition.type.Label(value = "NovoVozilo")
+   private java.lang.Boolean novo_vozilo;
+
    public Kupac()
    {
+   }
+
+   public java.lang.Long getKupacID()
+   {
+      return this.kupacID;
+   }
+
+   public void setKupacID(java.lang.Long kupacID)
+   {
+      this.kupacID = kupacID;
+   }
+
+   public java.lang.String getIme()
+   {
+      return this.ime;
+   }
+
+   public void setIme(java.lang.String ime)
+   {
+      this.ime = ime;
+   }
+
+   public java.lang.String getPrezime()
+   {
+      return this.prezime;
+   }
+
+   public void setPrezime(java.lang.String prezime)
+   {
+      this.prezime = prezime;
+   }
+
+   public java.lang.String getAdresa()
+   {
+      return this.adresa;
+   }
+
+   public void setAdresa(java.lang.String adresa)
+   {
+      this.adresa = adresa;
+   }
+
+   public java.lang.String getOib()
+   {
+      return this.oib;
+   }
+
+   public void setOib(java.lang.String oib)
+   {
+      this.oib = oib;
+   }
+
+   public java.lang.Boolean getNovo_vozilo()
+   {
+      return this.novo_vozilo;
+   }
+
+   public void setNovo_vozilo(java.lang.Boolean novo_vozilo)
+   {
+      this.novo_vozilo = novo_vozilo;
+   }
+
+   public Kupac(java.lang.Long kupacID, java.lang.String ime,
+         java.lang.String prezime, java.lang.String adresa,
+         java.lang.String oib, java.lang.Boolean novo_vozilo)
+   {
+      this.kupacID = kupacID;
+      this.ime = ime;
+      this.prezime = prezime;
+      this.adresa = adresa;
+      this.oib = oib;
+      this.novo_vozilo = novo_vozilo;
    }
 
 }
