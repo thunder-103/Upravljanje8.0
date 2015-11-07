@@ -10,10 +10,22 @@ public class Ponuda implements java.io.Serializable
 
    static final long serialVersionUID = 1L;
 
-   @org.kie.api.definition.type.Label(value = "PonudaID")
+   @org.kie.api.definition.type.Label("PonudaID")
    private java.lang.Long ponudaID;
-   @org.kie.api.definition.type.Label(value = "KupacID")
+   @org.kie.api.definition.type.Label("KupacID")
    private superime.prodajavozila.Kupac kupacID;
+
+   @org.kie.api.definition.type.Label(value = "VoziloID")
+   private superime.prodajavozila.Vozilo voziloID;
+
+   @org.kie.api.definition.type.Label(value = "NarudzbaVozila")
+   private java.lang.Boolean narudzba_vozila;
+
+   @org.kie.api.definition.type.Label(value = "LagerVozilo")
+   private java.lang.Boolean lager_vozilo;
+
+   @org.kie.api.definition.type.Label(value = "NastavakPregovora")
+   private java.lang.Boolean nastavak_pregovora;
 
    public Ponuda()
    {
@@ -39,10 +51,57 @@ public class Ponuda implements java.io.Serializable
       this.kupacID = kupacID;
    }
 
-   public Ponuda(java.lang.Long ponudaID, superime.prodajavozila.Kupac kupacID)
+   public superime.prodajavozila.Vozilo getVoziloID()
+   {
+      return this.voziloID;
+   }
+
+   public void setVoziloID(superime.prodajavozila.Vozilo voziloID)
+   {
+      this.voziloID = voziloID;
+   }
+
+   public java.lang.Boolean getNarudzba_vozila()
+   {
+      return this.narudzba_vozila;
+   }
+
+   public void setNarudzba_vozila(java.lang.Boolean narudzba_vozila)
+   {
+      this.narudzba_vozila = narudzba_vozila;
+   }
+
+   public java.lang.Boolean getLager_vozilo()
+   {
+      return this.lager_vozilo;
+   }
+
+   public void setLager_vozilo(java.lang.Boolean lager_vozilo)
+   {
+      this.lager_vozilo = lager_vozilo;
+   }
+
+   public java.lang.Boolean getNastavak_pregovora()
+   {
+      return this.nastavak_pregovora;
+   }
+
+   public void setNastavak_pregovora(java.lang.Boolean nastavak_pregovora)
+   {
+      this.nastavak_pregovora = nastavak_pregovora;
+   }
+
+   public Ponuda(java.lang.Long ponudaID, superime.prodajavozila.Kupac kupacID,
+         superime.prodajavozila.Vozilo voziloID,
+         java.lang.Boolean narudzba_vozila, java.lang.Boolean lager_vozilo,
+         java.lang.Boolean nastavak_pregovora)
    {
       this.ponudaID = ponudaID;
       this.kupacID = kupacID;
+      this.voziloID = voziloID;
+      this.narudzba_vozila = narudzba_vozila;
+      this.lager_vozilo = lager_vozilo;
+      this.nastavak_pregovora = nastavak_pregovora;
    }
 
 }
