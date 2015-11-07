@@ -15,17 +15,20 @@ public class Ponuda implements java.io.Serializable
    @org.kie.api.definition.type.Label("KupacID")
    private superime.prodajavozila.Kupac kupacID;
 
-   @org.kie.api.definition.type.Label(value = "VoziloID")
+   @org.kie.api.definition.type.Label("VoziloID")
    private superime.prodajavozila.Vozilo voziloID;
 
-   @org.kie.api.definition.type.Label(value = "NarudzbaVozila")
+   @org.kie.api.definition.type.Label("NarudzbaVozila")
    private java.lang.Boolean narudzba_vozila;
 
-   @org.kie.api.definition.type.Label(value = "LagerVozilo")
+   @org.kie.api.definition.type.Label("LagerVozilo")
    private java.lang.Boolean lager_vozilo;
 
-   @org.kie.api.definition.type.Label(value = "NastavakPregovora")
+   @org.kie.api.definition.type.Label("NastavakPregovora")
    private java.lang.Boolean nastavak_pregovora;
+
+   @org.kie.api.definition.type.Label(value = "Placeno")
+   private java.lang.Boolean placeno;
 
    public Ponuda()
    {
@@ -91,10 +94,20 @@ public class Ponuda implements java.io.Serializable
       this.nastavak_pregovora = nastavak_pregovora;
    }
 
+   public java.lang.Boolean getPlaceno()
+   {
+      return this.placeno;
+   }
+
+   public void setPlaceno(java.lang.Boolean placeno)
+   {
+      this.placeno = placeno;
+   }
+
    public Ponuda(java.lang.Long ponudaID, superime.prodajavozila.Kupac kupacID,
          superime.prodajavozila.Vozilo voziloID,
          java.lang.Boolean narudzba_vozila, java.lang.Boolean lager_vozilo,
-         java.lang.Boolean nastavak_pregovora)
+         java.lang.Boolean nastavak_pregovora, java.lang.Boolean placeno)
    {
       this.ponudaID = ponudaID;
       this.kupacID = kupacID;
@@ -102,6 +115,7 @@ public class Ponuda implements java.io.Serializable
       this.narudzba_vozila = narudzba_vozila;
       this.lager_vozilo = lager_vozilo;
       this.nastavak_pregovora = nastavak_pregovora;
+      this.placeno = placeno;
    }
 
 }
