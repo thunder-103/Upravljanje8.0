@@ -10,18 +10,21 @@ public class Kupac implements java.io.Serializable
 
    static final long serialVersionUID = 1L;
 
-   @org.kie.api.definition.type.Label(value = "KupacID")
+   @org.kie.api.definition.type.Label("KupacID")
    private java.lang.Long kupacID;
-   @org.kie.api.definition.type.Label(value = "Ime")
+   @org.kie.api.definition.type.Label("Ime")
    private java.lang.String ime;
-   @org.kie.api.definition.type.Label(value = "Prezime")
+   @org.kie.api.definition.type.Label("Prezime")
    private java.lang.String prezime;
-   @org.kie.api.definition.type.Label(value = "Adresa")
+   @org.kie.api.definition.type.Label("Adresa")
    private java.lang.String adresa;
-   @org.kie.api.definition.type.Label(value = "OIB")
+   @org.kie.api.definition.type.Label("OIB")
    private java.lang.String oib;
-   @org.kie.api.definition.type.Label(value = "NovoVozilo")
+   @org.kie.api.definition.type.Label("NovoVozilo")
    private java.lang.Boolean novo_vozilo;
+
+   @org.kie.api.definition.type.Label(value = "ProbnaVoznja")
+   private java.lang.Boolean probna_voznja;
 
    public Kupac()
    {
@@ -87,9 +90,20 @@ public class Kupac implements java.io.Serializable
       this.novo_vozilo = novo_vozilo;
    }
 
+   public java.lang.Boolean getProbna_voznja()
+   {
+      return this.probna_voznja;
+   }
+
+   public void setProbna_voznja(java.lang.Boolean probna_voznja)
+   {
+      this.probna_voznja = probna_voznja;
+   }
+
    public Kupac(java.lang.Long kupacID, java.lang.String ime,
          java.lang.String prezime, java.lang.String adresa,
-         java.lang.String oib, java.lang.Boolean novo_vozilo)
+         java.lang.String oib, java.lang.Boolean novo_vozilo,
+         java.lang.Boolean probna_voznja)
    {
       this.kupacID = kupacID;
       this.ime = ime;
@@ -97,6 +111,7 @@ public class Kupac implements java.io.Serializable
       this.adresa = adresa;
       this.oib = oib;
       this.novo_vozilo = novo_vozilo;
+      this.probna_voznja = probna_voznja;
    }
 
 }
