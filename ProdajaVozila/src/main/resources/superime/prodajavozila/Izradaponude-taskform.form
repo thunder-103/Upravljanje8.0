@@ -3,15 +3,16 @@
 <property name="name" value="Izradaponude-taskform.form"/>
 <property name="displayMode" value="default"/>
 <property name="status" value="0"/>
-<field position="0" name="vozilo_id_vrsta" type="InputText" id="1779842997">
+<field position="1" name="vozilo_id_vrsta" type="InputText" id="1779842997">
 <property name="fieldRequired" value="false"/>
+<property name="groupWithPrevious" value="false"/>
 <property name="label" value="quot;enquot;,quot;vrsta (vozilo_id)quot;"/>
 <property name="readonly" value="false"/>
 <property name="inputBinding" value="vozilo_ulaz/vrsta"/>
 <property name="outputBinding" value="vozilo_izlaz/vrsta"/>
 <property name="fieldClass" value="java.lang.String"/>
 </field>
-<field position="1" name="vozilo_id_model" type="InputText" id="1287795120">
+<field position="2" name="vozilo_id_model" type="InputText" id="1287795120">
 <property name="fieldRequired" value="false"/>
 <property name="label" value="quot;enquot;,quot;model (vozilo_id)quot;"/>
 <property name="readonly" value="false"/>
@@ -19,7 +20,7 @@
 <property name="outputBinding" value="vozilo_izlaz/model"/>
 <property name="fieldClass" value="java.lang.String"/>
 </field>
-<field position="2" name="vozilo_id_motor" type="InputText" id="1460772812">
+<field position="3" name="vozilo_id_motor" type="InputText" id="1460772812">
 <property name="fieldRequired" value="false"/>
 <property name="label" value="quot;enquot;,quot;motor (vozilo_id)quot;"/>
 <property name="readonly" value="false"/>
@@ -27,7 +28,7 @@
 <property name="outputBinding" value="vozilo_izlaz/motor"/>
 <property name="fieldClass" value="java.lang.String"/>
 </field>
-<field position="3" name="vozilo_id_oprema" type="InputText" id="77570474">
+<field position="4" name="vozilo_id_oprema" type="InputText" id="77570474">
 <property name="fieldRequired" value="false"/>
 <property name="label" value="quot;enquot;,quot;oprema (vozilo_id)quot;"/>
 <property name="readonly" value="false"/>
@@ -35,7 +36,7 @@
 <property name="outputBinding" value="vozilo_izlaz/oprema"/>
 <property name="fieldClass" value="java.lang.String"/>
 </field>
-<field position="4" name="vozilo_id_dodatnaOprema" type="InputText" id="949744718">
+<field position="5" name="vozilo_id_dodatnaOprema" type="InputText" id="949744718">
 <property name="fieldRequired" value="false"/>
 <property name="label" value="quot;enquot;,quot;dodatnaOprema (vozilo_id)quot;"/>
 <property name="readonly" value="false"/>
@@ -43,7 +44,7 @@
 <property name="outputBinding" value="vozilo_izlaz/dodatnaOprema"/>
 <property name="fieldClass" value="java.lang.String"/>
 </field>
-<field position="5" name="vozilo_id_VIN" type="InputText" id="1970535771">
+<field position="6" name="vozilo_id_VIN" type="InputText" id="1970535771">
 <property name="fieldRequired" value="false"/>
 <property name="label" value="quot;enquot;,quot;VIN (vozilo_id)quot;"/>
 <property name="readonly" value="false"/>
@@ -51,13 +52,38 @@
 <property name="outputBinding" value="vozilo_izlaz/VIN"/>
 <property name="fieldClass" value="java.lang.String"/>
 </field>
-<field position="6" name="ponuda_id_kupacID" type="Subform" id="1421920999">
+<field position="8" name="ponuda_id_kupacID" type="Subform" id="1421920999">
 <property name="fieldRequired" value="false"/>
+<property name="groupWithPrevious" value="false"/>
 <property name="label" value="quot;enquot;,quot;kupacID (ponuda_id)quot;"/>
 <property name="readonly" value="false"/>
 <property name="inputBinding" value="ponuda_ulaz/kupacID"/>
 <property name="outputBinding" value="ponuda_izlaz/kupacID"/>
 <property name="fieldClass" value="java.lang.Object"/>
+</field>
+<field position="7" name="vozilo_id_cijena" type="InputTextLong" id="673955411">
+<property name="fieldRequired" value="false"/>
+<property name="groupWithPrevious" value="false"/>
+<property name="label" value="quot;enquot;,quot;cijena (vozilo_id)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="vozilo_ulaz/cijena"/>
+<property name="outputBinding" value="vozilo_izlaz/cijena"/>
+<property name="fieldClass" value="java.lang.Long"/>
+</field>
+<field position="0" name=":decorator_0" type="HTMLLabel" id="196331580">
+<property name="fieldRequired" value="false"/>
+<property name="groupWithPrevious" value="false"/>
+<property name="readonly" value="false"/>
+<property name="htmlContent" value="quot;caquot;,quot;&lt;p&gt;Ponuda za vozilo:&lt;/p&gt;
+quot;quot;dequot;,quot;&lt;p&gt;Ponuda za vozilo:&lt;/p&gt;
+quot;quot;enquot;,quot;&lt;p&gt;Ponuda za vozilo:&lt;/p&gt;
+quot;quot;esquot;,quot;&lt;p&gt;Ponuda za vozilo:&lt;/p&gt;
+quot;quot;frquot;,quot;&lt;p&gt;Ponuda za vozilo:&lt;/p&gt;
+quot;quot;jaquot;,quot;&lt;p&gt;Ponuda za vozilo:&lt;/p&gt;
+quot;quot;ptquot;,quot;&lt;p&gt;Ponuda za vozilo:&lt;/p&gt;
+quot;quot;zhquot;,quot;&lt;p&gt;Ponuda za vozilo:&lt;/p&gt;
+quot;"/>
+<property name="fieldClass" value="HTMLlabel"/>
 </field>
 <dataHolder inputId="ponuda_ulaz" name="#E9E371" type="dataModelerEntry" outId="ponuda_izlaz" value="superime.prodajavozila.Ponuda" id="ponuda_id"/>
 <dataHolder inputId="vozilo_ulaz" name="#E9E371" type="dataModelerEntry" outId="vozilo_izlaz" value="superime.prodajavozila.Vozilo" id="vozilo_id"/>
