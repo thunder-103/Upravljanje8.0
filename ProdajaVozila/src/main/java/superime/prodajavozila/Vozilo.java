@@ -17,17 +17,20 @@ public class Vozilo implements java.io.Serializable
    @org.kie.api.definition.type.Label("Model")
    private java.lang.String model;
 
-   @org.kie.api.definition.type.Label(value = "Motor")
+   @org.kie.api.definition.type.Label("Motor")
    private java.lang.String motor;
 
-   @org.kie.api.definition.type.Label(value = "Oprema")
+   @org.kie.api.definition.type.Label("Oprema")
    private java.lang.String oprema;
 
-   @org.kie.api.definition.type.Label(value = "Dodatna oprema")
+   @org.kie.api.definition.type.Label("Dodatna oprema")
    private java.lang.String dodatnaOprema;
 
-   @org.kie.api.definition.type.Label(value = "VIN")
+   @org.kie.api.definition.type.Label("VIN")
    private java.lang.String VIN;
+
+   @org.kie.api.definition.type.Label(value = "Cijena")
+   private java.lang.Long cijena;
 
    public Vozilo()
    {
@@ -103,10 +106,20 @@ public class Vozilo implements java.io.Serializable
       this.VIN = VIN;
    }
 
+   public java.lang.Long getCijena()
+   {
+      return this.cijena;
+   }
+
+   public void setCijena(java.lang.Long cijena)
+   {
+      this.cijena = cijena;
+   }
+
    public Vozilo(java.lang.Long voziloID, java.lang.String vrsta,
          java.lang.String model, java.lang.String motor,
          java.lang.String oprema, java.lang.String dodatnaOprema,
-         java.lang.String VIN)
+         java.lang.String VIN, java.lang.Long cijena)
    {
       this.voziloID = voziloID;
       this.vrsta = vrsta;
@@ -115,6 +128,7 @@ public class Vozilo implements java.io.Serializable
       this.oprema = oprema;
       this.dodatnaOprema = dodatnaOprema;
       this.VIN = VIN;
+      this.cijena = cijena;
    }
 
 }
