@@ -23,8 +23,11 @@ public class Kupac implements java.io.Serializable
    @org.kie.api.definition.type.Label("NovoVozilo")
    private java.lang.Boolean novo_vozilo;
 
-   @org.kie.api.definition.type.Label(value = "ProbnaVoznja")
+   @org.kie.api.definition.type.Label("ProbnaVoznja")
    private java.lang.Boolean probna_voznja;
+
+   @org.kie.api.definition.type.Label(value = "E-mail")
+   private java.lang.String email;
 
    public Kupac()
    {
@@ -100,10 +103,20 @@ public class Kupac implements java.io.Serializable
       this.probna_voznja = probna_voznja;
    }
 
+   public java.lang.String getEmail()
+   {
+      return this.email;
+   }
+
+   public void setEmail(java.lang.String email)
+   {
+      this.email = email;
+   }
+
    public Kupac(java.lang.Long kupacID, java.lang.String ime,
          java.lang.String prezime, java.lang.String adresa,
          java.lang.String oib, java.lang.Boolean novo_vozilo,
-         java.lang.Boolean probna_voznja)
+         java.lang.Boolean probna_voznja, java.lang.String email)
    {
       this.kupacID = kupacID;
       this.ime = ime;
@@ -112,6 +125,7 @@ public class Kupac implements java.io.Serializable
       this.oib = oib;
       this.novo_vozilo = novo_vozilo;
       this.probna_voznja = probna_voznja;
+      this.email = email;
    }
 
 }
