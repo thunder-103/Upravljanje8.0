@@ -3,4 +3,5 @@
 <property name="name" value="Upisidojmoveoprobnojvoznji-taskform.form"/>
 <property name="displayMode" value="default"/>
 <property name="status" value="0"/>
+<dataHolder inputId="kupac_ulaz" name="#E9E371" type="dataModelerEntry" outId="kupac_izlaz" value="superime.prodajavozila.Kupac" id="kupac_id"/>
 </form>
