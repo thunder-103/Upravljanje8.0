@@ -3,4 +3,37 @@
 <property name="name" value="Ponovnokontaktirajstranku-taskform.form"/>
 <property name="displayMode" value="default"/>
 <property name="status" value="0"/>
+<field position="1" name="izvjestaj_id_kupac_id" type="InputTextLong" id="492177610">
+<property name="fieldRequired" value="false"/>
+<property name="groupWithPrevious" value="false"/>
+<property name="label" value="quot;enquot;,quot;kupac_id (izvjestaj_id)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="izvjestaj_ulaz/kupac_id"/>
+<property name="outputBinding" value="izvjestaj_izlaz/kupac_id"/>
+<property name="fieldClass" value="java.lang.Long"/>
+</field>
+<field position="2" name="izvjestaj_id_izvjestaj_prije" type="InputText" id="679941375">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;izvjestaj_prije (izvjestaj_id)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="izvjestaj_ulaz/izvjestaj_prije"/>
+<property name="outputBinding" value="izvjestaj_izlaz/izvjestaj_prije"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="0" name=":decorator_0" type="HTMLLabel" id="122240205">
+<property name="fieldRequired" value="false"/>
+<property name="groupWithPrevious" value="false"/>
+<property name="readonly" value="false"/>
+<property name="htmlContent" value="quot;caquot;,quot;&lt;p&gt;Upisi stanje pregovora prije narudzbe:&lt;/p&gt;
+quot;quot;dequot;,quot;&lt;p&gt;Upisi stanje pregovora prije narudzbe:&lt;/p&gt;
+quot;quot;enquot;,quot;&lt;p&gt;Upisi stanje pregovora prije narudzbe:&lt;/p&gt;
+quot;quot;esquot;,quot;&lt;p&gt;Upisi stanje pregovora prije narudzbe:&lt;/p&gt;
+quot;quot;frquot;,quot;&lt;p&gt;Upisi stanje pregovora prije narudzbe:&lt;/p&gt;
+quot;quot;jaquot;,quot;&lt;p&gt;Upisi stanje pregovora prije narudzbe:&lt;/p&gt;
+quot;quot;ptquot;,quot;&lt;p&gt;Upisi stanje pregovora prije narudzbe:&lt;/p&gt;
+quot;quot;zhquot;,quot;&lt;p&gt;Upisi stanje pregovora prije narudzbe:&lt;/p&gt;
+quot;"/>
+<property name="fieldClass" value="HTMLlabel"/>
+</field>
+<dataHolder inputId="izvjestaj_ulaz" name="#E9E371" type="dataModelerEntry" outId="izvjestaj_izlaz" value="superime.prodajavozila.PonovniKontakt" id="izvjestaj_id"/>
 </form>
