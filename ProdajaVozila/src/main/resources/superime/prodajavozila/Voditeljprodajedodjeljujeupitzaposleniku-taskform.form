@@ -3,6 +3,13 @@
 <property name="name" value="Voditeljprodajedodjeljujeupitzaposleniku-taskform.form"/>
 <property name="displayMode" value="default"/>
 <property name="status" value="0"/>
+<field position="0" name=":decorator_0" type="HTMLLabel" id="80346380">
+<property name="fieldRequired" value="false"/>
+<property name="groupWithPrevious" value="false"/>
+<property name="readonly" value="false"/>
+<property name="htmlContent" value="quot;caquot;,quot;&lt;p&gt;Unesi podatke o kupcu:&lt;/p&gt; quot;quot;dequot;,quot;&lt;p&gt;Unesi podatke o kupcu:&lt;/p&gt; quot;quot;enquot;,quot;&lt;p&gt;Unesi podatke o kupcu:&lt;/p&gt; quot;quot;esquot;,quot;&lt;p&gt;Unesi podatke o kupcu:&lt;/p&gt; quot;quot;frquot;,quot;&lt;p&gt;Unesi podatke o kupcu:&lt;/p&gt; quot;quot;jaquot;,quot;&lt;p&gt;Unesi podatke o kupcu:&lt;/p&gt; quot;quot;ptquot;,quot;&lt;p&gt;Unesi podatke o kupcu:&lt;/p&gt; quot;quot;zhquot;,quot;&lt;p&gt;Unesi podatke o kupcu:&lt;/p&gt; quot;"/>
+<property name="fieldClass" value="HTMLlabel"/>
+</field>
 <field position="1" name="kupac_id_ime" type="InputText" id="1769527331">
 <property name="fieldRequired" value="false"/>
 <property name="groupWithPrevious" value="false"/>
@@ -51,21 +58,6 @@
 <property name="inputBinding" value="kupac_ulaz/probna_voznja"/>
 <property name="outputBinding" value="kupac_izlaz/probna_voznja"/>
 <property name="fieldClass" value="java.lang.Boolean"/>
-</field>
-<field position="0" name=":decorator_0" type="HTMLLabel" id="80346380">
-<property name="fieldRequired" value="false"/>
-<property name="groupWithPrevious" value="false"/>
-<property name="readonly" value="false"/>
-<property name="htmlContent" value="quot;caquot;,quot;&lt;p&gt;Unesi podatke o kupcu:&lt;/p&gt;
-quot;quot;dequot;,quot;&lt;p&gt;Unesi podatke o kupcu:&lt;/p&gt;
-quot;quot;enquot;,quot;&lt;p&gt;Unesi podatke o kupcu:&lt;/p&gt;
-quot;quot;esquot;,quot;&lt;p&gt;Unesi podatke o kupcu:&lt;/p&gt;
-quot;quot;frquot;,quot;&lt;p&gt;Unesi podatke o kupcu:&lt;/p&gt;
-quot;quot;jaquot;,quot;&lt;p&gt;Unesi podatke o kupcu:&lt;/p&gt;
-quot;quot;ptquot;,quot;&lt;p&gt;Unesi podatke o kupcu:&lt;/p&gt;
-quot;quot;zhquot;,quot;&lt;p&gt;Unesi podatke o kupcu:&lt;/p&gt;
-quot;"/>
-<property name="fieldClass" value="HTMLlabel"/>
 </field>
 <dataHolder inputId="kupac_ulaz" name="#E9E371" type="dataModelerEntry" outId="kupac_izlaz" value="superime.prodajavozila.Kupac" id="kupac_id"/>
 </form>
