@@ -9,11 +9,11 @@ public class Narudzba implements java.io.Serializable
 
    static final long serialVersionUID = 1L;
 
-   @org.kie.api.definition.type.Label(value = "Narudzba ID")
+   @org.kie.api.definition.type.Label("Narudzba ID")
    private java.lang.Long narudzba_id;
-   @org.kie.api.definition.type.Label(value = "Ponuda ID")
-   private java.lang.Long ponuda_id;
-   @org.kie.api.definition.type.Label(value = "Napomena")
+   @org.kie.api.definition.type.Label("Ponuda ID")
+   private Ponuda ponuda_id;
+   @org.kie.api.definition.type.Label("Napomena")
    private java.lang.String napomena;
 
    public Narudzba()
@@ -30,16 +30,6 @@ public class Narudzba implements java.io.Serializable
       this.narudzba_id = narudzba_id;
    }
 
-   public java.lang.Long getPonuda_id()
-   {
-      return this.ponuda_id;
-   }
-
-   public void setPonuda_id(java.lang.Long ponuda_id)
-   {
-      this.ponuda_id = ponuda_id;
-   }
-
    public java.lang.String getNapomena()
    {
       return this.napomena;
@@ -50,8 +40,18 @@ public class Narudzba implements java.io.Serializable
       this.napomena = napomena;
    }
 
-   public Narudzba(java.lang.Long narudzba_id, java.lang.Long ponuda_id,
-         java.lang.String napomena)
+   public superime.prodajavozila.Ponuda getPonuda_id()
+   {
+      return this.ponuda_id;
+   }
+
+   public void setPonuda_id(superime.prodajavozila.Ponuda ponuda_id)
+   {
+      this.ponuda_id = ponuda_id;
+   }
+
+   public Narudzba(java.lang.Long narudzba_id,
+         superime.prodajavozila.Ponuda ponuda_id, java.lang.String napomena)
    {
       this.narudzba_id = narudzba_id;
       this.ponuda_id = ponuda_id;
