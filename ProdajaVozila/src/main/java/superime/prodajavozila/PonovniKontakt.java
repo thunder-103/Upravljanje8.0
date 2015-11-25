@@ -9,13 +9,13 @@ public class PonovniKontakt implements java.io.Serializable
 
    static final long serialVersionUID = 1L;
 
-   @org.kie.api.definition.type.Label(value = "Ponovni kontakt ID")
+   @org.kie.api.definition.type.Label("Ponovni kontakt ID")
    private java.lang.Long ponovni_kontaktID;
-   @org.kie.api.definition.type.Label(value = "KupacID")
-   private java.lang.Long kupac_id;
-   @org.kie.api.definition.type.Label(value = "Izvjestaj prije narudzbe")
+   @org.kie.api.definition.type.Label("KupacID")
+   private Kupac kupac_id;
+   @org.kie.api.definition.type.Label("Izvjestaj prije narudzbe")
    private java.lang.String izvjestaj_prije;
-   @org.kie.api.definition.type.Label(value = "Izvjestaj poslije narudzbe")
+   @org.kie.api.definition.type.Label("Izvjestaj poslije narudzbe")
    private java.lang.String izvjestaj_poslije;
 
    public PonovniKontakt()
@@ -30,16 +30,6 @@ public class PonovniKontakt implements java.io.Serializable
    public void setPonovni_kontaktID(java.lang.Long ponovni_kontaktID)
    {
       this.ponovni_kontaktID = ponovni_kontaktID;
-   }
-
-   public java.lang.Long getKupac_id()
-   {
-      return this.kupac_id;
-   }
-
-   public void setKupac_id(java.lang.Long kupac_id)
-   {
-      this.kupac_id = kupac_id;
    }
 
    public java.lang.String getIzvjestaj_prije()
@@ -62,9 +52,19 @@ public class PonovniKontakt implements java.io.Serializable
       this.izvjestaj_poslije = izvjestaj_poslije;
    }
 
+   public superime.prodajavozila.Kupac getKupac_id()
+   {
+      return this.kupac_id;
+   }
+
+   public void setKupac_id(superime.prodajavozila.Kupac kupac_id)
+   {
+      this.kupac_id = kupac_id;
+   }
+
    public PonovniKontakt(java.lang.Long ponovni_kontaktID,
-         java.lang.Long kupac_id, java.lang.String izvjestaj_prije,
-         java.lang.String izvjestaj_poslije)
+         superime.prodajavozila.Kupac kupac_id,
+         java.lang.String izvjestaj_prije, java.lang.String izvjestaj_poslije)
    {
       this.ponovni_kontaktID = ponovni_kontaktID;
       this.kupac_id = kupac_id;
