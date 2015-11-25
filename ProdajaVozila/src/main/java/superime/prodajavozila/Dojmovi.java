@@ -14,6 +14,9 @@ public class Dojmovi implements java.io.Serializable
    @org.kie.api.definition.type.Label("Dojam")
    private java.lang.String dojam;
 
+   @org.kie.api.definition.type.Label(value = "NastavakPregovora")
+   private java.lang.String nastavak_pregovora;
+
    public Dojmovi()
    {
    }
@@ -38,10 +41,22 @@ public class Dojmovi implements java.io.Serializable
       this.dojam = dojam;
    }
 
-   public Dojmovi(java.lang.Long dojmovi_id, java.lang.String dojam)
+   public java.lang.String getNastavak_pregovora()
+   {
+      return this.nastavak_pregovora;
+   }
+
+   public void setNastavak_pregovora(java.lang.String nastavak_pregovora)
+   {
+      this.nastavak_pregovora = nastavak_pregovora;
+   }
+
+   public Dojmovi(java.lang.Long dojmovi_id, java.lang.String dojam,
+         java.lang.String nastavak_pregovora)
    {
       this.dojmovi_id = dojmovi_id;
       this.dojam = dojam;
+      this.nastavak_pregovora = nastavak_pregovora;
    }
 
 }
