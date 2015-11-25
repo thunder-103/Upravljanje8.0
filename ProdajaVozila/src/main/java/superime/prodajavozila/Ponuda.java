@@ -21,9 +21,6 @@ public class Ponuda implements java.io.Serializable
    @org.kie.api.definition.type.Label("NarudzbaVozila")
    private Narudzba narudzba_vozila;
 
-   @org.kie.api.definition.type.Label("LagerVozilo")
-   private String lager_vozilo;
-
    @org.kie.api.definition.type.Label("NastavakPregovora")
    private String nastavak_pregovora;
 
@@ -32,9 +29,6 @@ public class Ponuda implements java.io.Serializable
 
    @org.kie.api.definition.type.Label("Isporuceno")
    private String isporuceno;
-
-   @org.kie.api.definition.type.Label("FollowUp")
-   private java.lang.String follow_up;
 
    public Ponuda()
    {
@@ -58,26 +52,6 @@ public class Ponuda implements java.io.Serializable
    public void setVoziloID(superime.prodajavozila.Vozilo voziloID)
    {
       this.voziloID = voziloID;
-   }
-
-   public java.lang.String getFollow_up()
-   {
-      return this.follow_up;
-   }
-
-   public void setFollow_up(java.lang.String follow_up)
-   {
-      this.follow_up = follow_up;
-   }
-
-   public java.lang.String getLager_vozilo()
-   {
-      return this.lager_vozilo;
-   }
-
-   public void setLager_vozilo(java.lang.String lager_vozilo)
-   {
-      this.lager_vozilo = lager_vozilo;
    }
 
    public java.lang.String getNastavak_pregovora()
@@ -133,19 +107,16 @@ public class Ponuda implements java.io.Serializable
    public Ponuda(java.lang.Long ponudaID, superime.prodajavozila.Kupac kupacID,
          superime.prodajavozila.Vozilo voziloID,
          superime.prodajavozila.Narudzba narudzba_vozila,
-         java.lang.String lager_vozilo, java.lang.String nastavak_pregovora,
-         java.lang.String placeno, java.lang.String isporuceno,
-         java.lang.String follow_up)
+         java.lang.String nastavak_pregovora, java.lang.String placeno,
+         java.lang.String isporuceno)
    {
       this.ponudaID = ponudaID;
       this.kupacID = kupacID;
       this.voziloID = voziloID;
       this.narudzba_vozila = narudzba_vozila;
-      this.lager_vozilo = lager_vozilo;
       this.nastavak_pregovora = nastavak_pregovora;
       this.placeno = placeno;
       this.isporuceno = isporuceno;
-      this.follow_up = follow_up;
    }
 
 }
