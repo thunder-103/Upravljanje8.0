@@ -19,19 +19,19 @@ public class Ponuda implements java.io.Serializable
    private superime.prodajavozila.Vozilo voziloID;
 
    @org.kie.api.definition.type.Label("NarudzbaVozila")
-   private java.lang.Boolean narudzba_vozila;
+   private String narudzba_vozila;
 
    @org.kie.api.definition.type.Label("LagerVozilo")
-   private java.lang.Boolean lager_vozilo;
+   private String lager_vozilo;
 
    @org.kie.api.definition.type.Label("NastavakPregovora")
-   private java.lang.Boolean nastavak_pregovora;
+   private String nastavak_pregovora;
 
    @org.kie.api.definition.type.Label("Placeno")
-   private java.lang.Boolean placeno;
+   private String placeno;
 
    @org.kie.api.definition.type.Label("Isporuceno")
-   private java.lang.Boolean isporuceno;
+   private String isporuceno;
 
    @org.kie.api.definition.type.Label("FollowUp")
    private java.lang.String follow_up;
@@ -60,56 +60,6 @@ public class Ponuda implements java.io.Serializable
       this.voziloID = voziloID;
    }
 
-   public java.lang.Boolean getNarudzba_vozila()
-   {
-      return this.narudzba_vozila;
-   }
-
-   public void setNarudzba_vozila(java.lang.Boolean narudzba_vozila)
-   {
-      this.narudzba_vozila = narudzba_vozila;
-   }
-
-   public java.lang.Boolean getLager_vozilo()
-   {
-      return this.lager_vozilo;
-   }
-
-   public void setLager_vozilo(java.lang.Boolean lager_vozilo)
-   {
-      this.lager_vozilo = lager_vozilo;
-   }
-
-   public java.lang.Boolean getNastavak_pregovora()
-   {
-      return this.nastavak_pregovora;
-   }
-
-   public void setNastavak_pregovora(java.lang.Boolean nastavak_pregovora)
-   {
-      this.nastavak_pregovora = nastavak_pregovora;
-   }
-
-   public java.lang.Boolean getPlaceno()
-   {
-      return this.placeno;
-   }
-
-   public void setPlaceno(java.lang.Boolean placeno)
-   {
-      this.placeno = placeno;
-   }
-
-   public java.lang.Boolean getIsporuceno()
-   {
-      return this.isporuceno;
-   }
-
-   public void setIsporuceno(java.lang.Boolean isporuceno)
-   {
-      this.isporuceno = isporuceno;
-   }
-
    public java.lang.String getFollow_up()
    {
       return this.follow_up;
@@ -130,11 +80,61 @@ public class Ponuda implements java.io.Serializable
       this.kupacID = kupacID;
    }
 
+   public java.lang.String getNarudzba_vozila()
+   {
+      return this.narudzba_vozila;
+   }
+
+   public void setNarudzba_vozila(java.lang.String narudzba_vozila)
+   {
+      this.narudzba_vozila = narudzba_vozila;
+   }
+
+   public java.lang.String getLager_vozilo()
+   {
+      return this.lager_vozilo;
+   }
+
+   public void setLager_vozilo(java.lang.String lager_vozilo)
+   {
+      this.lager_vozilo = lager_vozilo;
+   }
+
+   public java.lang.String getNastavak_pregovora()
+   {
+      return this.nastavak_pregovora;
+   }
+
+   public void setNastavak_pregovora(java.lang.String nastavak_pregovora)
+   {
+      this.nastavak_pregovora = nastavak_pregovora;
+   }
+
+   public java.lang.String getPlaceno()
+   {
+      return this.placeno;
+   }
+
+   public void setPlaceno(java.lang.String placeno)
+   {
+      this.placeno = placeno;
+   }
+
+   public java.lang.String getIsporuceno()
+   {
+      return this.isporuceno;
+   }
+
+   public void setIsporuceno(java.lang.String isporuceno)
+   {
+      this.isporuceno = isporuceno;
+   }
+
    public Ponuda(java.lang.Long ponudaID, java.lang.Long kupacID,
          superime.prodajavozila.Vozilo voziloID,
-         java.lang.Boolean narudzba_vozila, java.lang.Boolean lager_vozilo,
-         java.lang.Boolean nastavak_pregovora, java.lang.Boolean placeno,
-         java.lang.Boolean isporuceno, java.lang.String follow_up)
+         java.lang.String narudzba_vozila, java.lang.String lager_vozilo,
+         java.lang.String nastavak_pregovora, java.lang.String placeno,
+         java.lang.String isporuceno, java.lang.String follow_up)
    {
       this.ponudaID = ponudaID;
       this.kupacID = kupacID;
