@@ -19,7 +19,7 @@ public class Ponuda implements java.io.Serializable
    private superime.prodajavozila.Vozilo voziloID;
 
    @org.kie.api.definition.type.Label("NarudzbaVozila")
-   private String narudzba_vozila;
+   private Narudzba narudzba_vozila;
 
    @org.kie.api.definition.type.Label("LagerVozilo")
    private String lager_vozilo;
@@ -68,16 +68,6 @@ public class Ponuda implements java.io.Serializable
    public void setFollow_up(java.lang.String follow_up)
    {
       this.follow_up = follow_up;
-   }
-
-   public java.lang.String getNarudzba_vozila()
-   {
-      return this.narudzba_vozila;
-   }
-
-   public void setNarudzba_vozila(java.lang.String narudzba_vozila)
-   {
-      this.narudzba_vozila = narudzba_vozila;
    }
 
    public java.lang.String getLager_vozilo()
@@ -130,11 +120,22 @@ public class Ponuda implements java.io.Serializable
       this.kupacID = kupacID;
    }
 
+   public superime.prodajavozila.Narudzba getNarudzba_vozila()
+   {
+      return this.narudzba_vozila;
+   }
+
+   public void setNarudzba_vozila(superime.prodajavozila.Narudzba narudzba_vozila)
+   {
+      this.narudzba_vozila = narudzba_vozila;
+   }
+
    public Ponuda(java.lang.Long ponudaID, superime.prodajavozila.Kupac kupacID,
          superime.prodajavozila.Vozilo voziloID,
-         java.lang.String narudzba_vozila, java.lang.String lager_vozilo,
-         java.lang.String nastavak_pregovora, java.lang.String placeno,
-         java.lang.String isporuceno, java.lang.String follow_up)
+         superime.prodajavozila.Narudzba narudzba_vozila,
+         java.lang.String lager_vozilo, java.lang.String nastavak_pregovora,
+         java.lang.String placeno, java.lang.String isporuceno,
+         java.lang.String follow_up)
    {
       this.ponudaID = ponudaID;
       this.kupacID = kupacID;
