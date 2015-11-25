@@ -21,12 +21,12 @@ public class Kupac implements java.io.Serializable
    @org.kie.api.definition.type.Label("OIB")
    private java.lang.String oib;
    @org.kie.api.definition.type.Label("NovoVozilo")
-   private java.lang.Boolean novo_vozilo;
+   private String novo_vozilo;
 
    @org.kie.api.definition.type.Label("ProbnaVoznja")
-   private java.lang.Boolean probna_voznja;
+   private String probna_voznja;
 
-   @org.kie.api.definition.type.Label(value = "E-mail")
+   @org.kie.api.definition.type.Label("E-mail")
    private java.lang.String email;
 
    public Kupac()
@@ -83,26 +83,6 @@ public class Kupac implements java.io.Serializable
       this.oib = oib;
    }
 
-   public java.lang.Boolean getNovo_vozilo()
-   {
-      return this.novo_vozilo;
-   }
-
-   public void setNovo_vozilo(java.lang.Boolean novo_vozilo)
-   {
-      this.novo_vozilo = novo_vozilo;
-   }
-
-   public java.lang.Boolean getProbna_voznja()
-   {
-      return this.probna_voznja;
-   }
-
-   public void setProbna_voznja(java.lang.Boolean probna_voznja)
-   {
-      this.probna_voznja = probna_voznja;
-   }
-
    public java.lang.String getEmail()
    {
       return this.email;
@@ -113,10 +93,30 @@ public class Kupac implements java.io.Serializable
       this.email = email;
    }
 
+   public java.lang.String getNovo_vozilo()
+   {
+      return this.novo_vozilo;
+   }
+
+   public void setNovo_vozilo(java.lang.String novo_vozilo)
+   {
+      this.novo_vozilo = novo_vozilo;
+   }
+
+   public java.lang.String getProbna_voznja()
+   {
+      return this.probna_voznja;
+   }
+
+   public void setProbna_voznja(java.lang.String probna_voznja)
+   {
+      this.probna_voznja = probna_voznja;
+   }
+
    public Kupac(java.lang.Long kupacID, java.lang.String ime,
          java.lang.String prezime, java.lang.String adresa,
-         java.lang.String oib, java.lang.Boolean novo_vozilo,
-         java.lang.Boolean probna_voznja, java.lang.String email)
+         java.lang.String oib, java.lang.String novo_vozilo,
+         java.lang.String probna_voznja, java.lang.String email)
    {
       this.kupacID = kupacID;
       this.ime = ime;
