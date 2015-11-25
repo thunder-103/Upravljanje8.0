@@ -14,9 +14,6 @@ public class Dojmovi implements java.io.Serializable
    @org.kie.api.definition.type.Label("Dojam")
    private java.lang.String dojam;
 
-   @org.kie.api.definition.type.Label(value = "PonudaID")
-   private superime.prodajavozila.Ponuda ponudaID;
-
    public Dojmovi()
    {
    }
@@ -41,22 +38,10 @@ public class Dojmovi implements java.io.Serializable
       this.dojam = dojam;
    }
 
-   public superime.prodajavozila.Ponuda getPonudaID()
-   {
-      return this.ponudaID;
-   }
-
-   public void setPonudaID(superime.prodajavozila.Ponuda ponudaID)
-   {
-      this.ponudaID = ponudaID;
-   }
-
-   public Dojmovi(java.lang.Long dojmovi_id, java.lang.String dojam,
-         superime.prodajavozila.Ponuda ponudaID)
+   public Dojmovi(java.lang.Long dojmovi_id, java.lang.String dojam)
    {
       this.dojmovi_id = dojmovi_id;
       this.dojam = dojam;
-      this.ponudaID = ponudaID;
    }
 
 }
