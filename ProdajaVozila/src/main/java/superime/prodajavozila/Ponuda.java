@@ -27,6 +27,9 @@ public class Ponuda implements java.io.Serializable
    @org.kie.api.definition.type.Label("Isporuceno")
    private String isporuceno;
 
+   @org.kie.api.definition.type.Label(value = "DojmoviID")
+   private superime.prodajavozila.Dojmovi dojmovi_id;
+
    public Ponuda()
    {
    }
@@ -91,10 +94,21 @@ public class Ponuda implements java.io.Serializable
       this.narudzba_vozila = narudzba_vozila;
    }
 
+   public superime.prodajavozila.Dojmovi getDojmovi_id()
+   {
+      return this.dojmovi_id;
+   }
+
+   public void setDojmovi_id(superime.prodajavozila.Dojmovi dojmovi_id)
+   {
+      this.dojmovi_id = dojmovi_id;
+   }
+
    public Ponuda(java.lang.Long ponudaID, superime.prodajavozila.Kupac kupacID,
          superime.prodajavozila.Vozilo voziloID,
          superime.prodajavozila.Narudzba narudzba_vozila,
-         java.lang.String placeno, java.lang.String isporuceno)
+         java.lang.String placeno, java.lang.String isporuceno,
+         superime.prodajavozila.Dojmovi dojmovi_id)
    {
       this.ponudaID = ponudaID;
       this.kupacID = kupacID;
@@ -102,6 +116,7 @@ public class Ponuda implements java.io.Serializable
       this.narudzba_vozila = narudzba_vozila;
       this.placeno = placeno;
       this.isporuceno = isporuceno;
+      this.dojmovi_id = dojmovi_id;
    }
 
 }
