@@ -14,6 +14,9 @@ public class Narudzba implements java.io.Serializable
    @org.kie.api.definition.type.Label("Napomena")
    private java.lang.String napomena;
 
+   @org.kie.api.definition.type.Label(value = "NarudzbaNovogVozila")
+   private java.lang.String narudzba_novog;
+
    public Narudzba()
    {
    }
@@ -38,10 +41,22 @@ public class Narudzba implements java.io.Serializable
       this.napomena = napomena;
    }
 
-   public Narudzba(java.lang.Long narudzba_id, java.lang.String napomena)
+   public java.lang.String getNarudzba_novog()
+   {
+      return this.narudzba_novog;
+   }
+
+   public void setNarudzba_novog(java.lang.String narudzba_novog)
+   {
+      this.narudzba_novog = narudzba_novog;
+   }
+
+   public Narudzba(java.lang.Long narudzba_id, java.lang.String napomena,
+         java.lang.String narudzba_novog)
    {
       this.narudzba_id = narudzba_id;
       this.napomena = napomena;
+      this.narudzba_novog = narudzba_novog;
    }
 
 }
