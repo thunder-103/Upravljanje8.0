@@ -21,5 +21,13 @@
 <property name="defaultSubform" value="DojmoviForma.form"/>
 <property name="fieldClass" value="java.lang.Object"/>
 </field>
+<field position="2" name="ponuda_id_narudzba_vozila" type="Subform" id="759074019">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;narudzba_vozila (ponuda_id)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="ponuda_ulaz/narudzba_vozila"/>
+<property name="outputBinding" value="ponuda_izlaz/narudzba_vozila"/>
+<property name="fieldClass" value="java.lang.Object"/>
+</field>
 <dataHolder inputId="ponuda_ulaz" name="#E9E371" type="dataModelerEntry" outId="ponuda_izlaz" value="superime.prodajavozila.Ponuda" id="ponuda_id"/>
 </form>
