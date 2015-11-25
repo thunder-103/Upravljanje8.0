@@ -12,7 +12,7 @@ public class Transakcija implements java.io.Serializable
    @org.kie.api.definition.type.Label("Transakcija ID")
    private java.lang.Long transakcija_id;
    @org.kie.api.definition.type.Label("Ponuda ID")
-   private java.lang.Long ponuda_id;
+   private Ponuda ponuda_id;
    @org.kie.api.definition.type.Label("Placeno")
    private String placeno;
 
@@ -30,16 +30,6 @@ public class Transakcija implements java.io.Serializable
       this.transakcija_id = transakcija_id;
    }
 
-   public java.lang.Long getPonuda_id()
-   {
-      return this.ponuda_id;
-   }
-
-   public void setPonuda_id(java.lang.Long ponuda_id)
-   {
-      this.ponuda_id = ponuda_id;
-   }
-
    public java.lang.String getPlaceno()
    {
       return this.placeno;
@@ -50,8 +40,18 @@ public class Transakcija implements java.io.Serializable
       this.placeno = placeno;
    }
 
-   public Transakcija(java.lang.Long transakcija_id, java.lang.Long ponuda_id,
-         java.lang.String placeno)
+   public superime.prodajavozila.Ponuda getPonuda_id()
+   {
+      return this.ponuda_id;
+   }
+
+   public void setPonuda_id(superime.prodajavozila.Ponuda ponuda_id)
+   {
+      this.ponuda_id = ponuda_id;
+   }
+
+   public Transakcija(java.lang.Long transakcija_id,
+         superime.prodajavozila.Ponuda ponuda_id, java.lang.String placeno)
    {
       this.transakcija_id = transakcija_id;
       this.ponuda_id = ponuda_id;
