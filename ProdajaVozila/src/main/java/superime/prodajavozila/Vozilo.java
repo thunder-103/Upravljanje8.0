@@ -29,8 +29,11 @@ public class Vozilo implements java.io.Serializable
    @org.kie.api.definition.type.Label("VIN")
    private java.lang.String VIN;
 
-   @org.kie.api.definition.type.Label(value = "Cijena")
+   @org.kie.api.definition.type.Label("Cijena")
    private java.lang.Long cijena;
+
+   @org.kie.api.definition.type.Label(value = "LagerVozilo")
+   private java.lang.String lager_vozilo;
 
    public Vozilo()
    {
@@ -116,10 +119,21 @@ public class Vozilo implements java.io.Serializable
       this.cijena = cijena;
    }
 
+   public java.lang.String getLager_vozilo()
+   {
+      return this.lager_vozilo;
+   }
+
+   public void setLager_vozilo(java.lang.String lager_vozilo)
+   {
+      this.lager_vozilo = lager_vozilo;
+   }
+
    public Vozilo(java.lang.Long voziloID, java.lang.String vrsta,
          java.lang.String model, java.lang.String motor,
          java.lang.String oprema, java.lang.String dodatnaOprema,
-         java.lang.String VIN, java.lang.Long cijena)
+         java.lang.String VIN, java.lang.Long cijena,
+         java.lang.String lager_vozilo)
    {
       this.voziloID = voziloID;
       this.vrsta = vrsta;
@@ -129,6 +143,7 @@ public class Vozilo implements java.io.Serializable
       this.dodatnaOprema = dodatnaOprema;
       this.VIN = VIN;
       this.cijena = cijena;
+      this.lager_vozilo = lager_vozilo;
    }
 
 }
