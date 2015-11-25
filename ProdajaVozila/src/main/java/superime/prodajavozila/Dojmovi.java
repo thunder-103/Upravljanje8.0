@@ -9,11 +9,11 @@ public class Dojmovi implements java.io.Serializable
 
    static final long serialVersionUID = 1L;
 
-   @org.kie.api.definition.type.Label(value = "DojmoviID")
+   @org.kie.api.definition.type.Label("DojmoviID")
    private java.lang.Long dojmovi_id;
-   @org.kie.api.definition.type.Label(value = "KupacID")
-   private java.lang.Long kupac_id;
-   @org.kie.api.definition.type.Label(value = "Dojam")
+   @org.kie.api.definition.type.Label("KupacID")
+   private Kupac kupac_id;
+   @org.kie.api.definition.type.Label("Dojam")
    private java.lang.String dojam;
 
    public Dojmovi()
@@ -30,16 +30,6 @@ public class Dojmovi implements java.io.Serializable
       this.dojmovi_id = dojmovi_id;
    }
 
-   public java.lang.Long getKupac_id()
-   {
-      return this.kupac_id;
-   }
-
-   public void setKupac_id(java.lang.Long kupac_id)
-   {
-      this.kupac_id = kupac_id;
-   }
-
    public java.lang.String getDojam()
    {
       return this.dojam;
@@ -50,8 +40,18 @@ public class Dojmovi implements java.io.Serializable
       this.dojam = dojam;
    }
 
-   public Dojmovi(java.lang.Long dojmovi_id, java.lang.Long kupac_id,
-         java.lang.String dojam)
+   public superime.prodajavozila.Kupac getKupac_id()
+   {
+      return this.kupac_id;
+   }
+
+   public void setKupac_id(superime.prodajavozila.Kupac kupac_id)
+   {
+      this.kupac_id = kupac_id;
+   }
+
+   public Dojmovi(java.lang.Long dojmovi_id,
+         superime.prodajavozila.Kupac kupac_id, java.lang.String dojam)
    {
       this.dojmovi_id = dojmovi_id;
       this.kupac_id = kupac_id;
