@@ -13,7 +13,7 @@ public class Ponuda implements java.io.Serializable
    @org.kie.api.definition.type.Label("PonudaID")
    private java.lang.Long ponudaID;
    @org.kie.api.definition.type.Label("KupacID")
-   private Long kupacID;
+   private Kupac kupacID;
 
    @org.kie.api.definition.type.Label("VoziloID")
    private superime.prodajavozila.Vozilo voziloID;
@@ -70,16 +70,6 @@ public class Ponuda implements java.io.Serializable
       this.follow_up = follow_up;
    }
 
-   public java.lang.Long getKupacID()
-   {
-      return this.kupacID;
-   }
-
-   public void setKupacID(java.lang.Long kupacID)
-   {
-      this.kupacID = kupacID;
-   }
-
    public java.lang.String getNarudzba_vozila()
    {
       return this.narudzba_vozila;
@@ -130,7 +120,17 @@ public class Ponuda implements java.io.Serializable
       this.isporuceno = isporuceno;
    }
 
-   public Ponuda(java.lang.Long ponudaID, java.lang.Long kupacID,
+   public superime.prodajavozila.Kupac getKupacID()
+   {
+      return this.kupacID;
+   }
+
+   public void setKupacID(superime.prodajavozila.Kupac kupacID)
+   {
+      this.kupacID = kupacID;
+   }
+
+   public Ponuda(java.lang.Long ponudaID, superime.prodajavozila.Kupac kupacID,
          superime.prodajavozila.Vozilo voziloID,
          java.lang.String narudzba_vozila, java.lang.String lager_vozilo,
          java.lang.String nastavak_pregovora, java.lang.String placeno,
