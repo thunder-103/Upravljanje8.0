@@ -3,4 +3,13 @@
 <property name="name" value="PonovniKontaktForm.form"/>
 <property name="displayMode" value="default"/>
 <property name="status" value="0"/>
+<field position="0" name="ponovni_kontakt_id_izvjestaj_prije" type="InputText" id="997813368">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;izvjestaj_prije (ponovni_kontakt_id)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="ponovni_kontakt_ulaz/izvjestaj_prije"/>
+<property name="outputBinding" value="ponovni_kontakt_izlaz/izvjestaj_prije"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<dataHolder inputId="ponovni_kontakt_ulaz" name="#E9E371" type="dataModelerEntry" outId="ponovni_kontakt_izlaz" value="superime.prodajavozila.PonovniKontakt" id="ponovni_kontakt_id"/>
 </form>
