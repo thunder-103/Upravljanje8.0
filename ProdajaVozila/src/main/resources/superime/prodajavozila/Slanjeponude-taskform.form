@@ -11,13 +11,6 @@
 <property name="outputBinding" value="kupac_izlaz/email"/>
 <property name="fieldClass" value="java.lang.String"/>
 </field>
-<field position="2" name="1321194719" type="Document" id="1321194719">
-<property name="fieldRequired" value="false"/>
-<property name="groupWithPrevious" value="false"/>
-<property name="label" value="quot;enquot;,quot;Document3quot;"/>
-<property name="readonly" value="false"/>
-<property name="fieldClass" value="org.jbpm.document.Document"/>
-</field>
 <field position="1" name="179835531" type="InputTextArea" id="179835531">
 <property name="fieldRequired" value="false"/>
 <property name="label" value="quot;enquot;,quot;InputTextArea3quot;"/>
