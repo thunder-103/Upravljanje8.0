@@ -3,4 +3,28 @@
 <property name="name" value="NastavakPregovoraForm.form"/>
 <property name="displayMode" value="default"/>
 <property name="status" value="0"/>
+<field position="1" name="dojmovi_id_nastavak_pregovora" type="InputText" id="182402521">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;nastavak_pregovora (dojmovi_id)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="dojmovi_ulaz/nastavak_pregovora"/>
+<property name="outputBinding" value="dojmovi_izlaz/nastavak_pregovora"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="0" name=":decorator_0" type="HTMLLabel" id="1034482950">
+<property name="fieldRequired" value="false"/>
+<property name="groupWithPrevious" value="false"/>
+<property name="readonly" value="false"/>
+<property name="htmlContent" value="quot;caquot;,quot;&lt;p&gt;Upisi (DA/NE):&lt;/p&gt;
+quot;quot;dequot;,quot;&lt;p&gt;Upisi (DA/NE):&lt;/p&gt;
+quot;quot;enquot;,quot;&lt;p&gt;Upisi (DA/NE):&lt;/p&gt;
+quot;quot;esquot;,quot;&lt;p&gt;Upisi (DA/NE):&lt;/p&gt;
+quot;quot;frquot;,quot;&lt;p&gt;Upisi (DA/NE):&lt;/p&gt;
+quot;quot;jaquot;,quot;&lt;p&gt;Upisi (DA/NE):&lt;/p&gt;
+quot;quot;ptquot;,quot;&lt;p&gt;Upisi (DA/NE):&lt;/p&gt;
+quot;quot;zhquot;,quot;&lt;p&gt;Upisi (DA/NE):&lt;/p&gt;
+quot;"/>
+<property name="fieldClass" value="HTMLlabel"/>
+</field>
+<dataHolder inputId="dojmovi_ulaz" name="#E9E371" type="dataModelerEntry" outId="dojmovi_izlaz" value="superime.prodajavozila.Dojmovi" id="dojmovi_id"/>
 </form>
