@@ -7,6 +7,13 @@
   <version>1.0</version>
   <name>ProdajaVozila</name>
   <description>Opisuje procese unutar prodaje novih vozila</description>
+  <dependencies>
+    <dependency>
+      <groupId>org.jugvale.jbpm.workitemhandler</groupId>
+      <artifactId>hello-workitemhandler</artifactId>
+      <version>1.0</version>
+    </dependency>
+  </dependencies>
   <build>
     <plugins>
       <plugin>
