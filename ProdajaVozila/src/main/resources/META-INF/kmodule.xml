@@ -3,6 +3,7 @@
     <ksession name="myksession" type="stateful" default="true" clockType="realtime">
       <workItemHandlers>
         <workItemHandler type="org.jugvale.jbpm.workitemhandler.HelloWorkItemHandler" name="HelloWorkItemHandler"/>
+        <workItemHandler type="org.jugvale.jbpm.workitemhandler.UpisPrviBazaItemHandler" name="UpisPrviBazaItemHandler"/>
       </workItemHandlers>
     </ksession>
   </kbase>
