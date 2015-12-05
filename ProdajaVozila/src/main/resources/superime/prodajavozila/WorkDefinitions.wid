@@ -19,6 +19,11 @@ import org.drools.core.process.core.datatype.impl.type.ObjectDataType;
     "icon" : "defaultemailicon.gif"
   ],
   [
+   "name" : "ProslijediMailomItemHandler",
+    "displayName" : "Proslijedi servisu!",
+    "icon" : "defaultemailicon.gif"
+  ],
+  [
     "name" : "Email",
     "parameters" : [
       "From" : new StringDataType(),
