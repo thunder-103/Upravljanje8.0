@@ -4,6 +4,7 @@
       <workItemHandlers>
         <workItemHandler type="org.jugvale.jbpm.workitemhandler.UpisPrviBazaItemHandler" name="UpisPrviBazaItemHandler"/>
         <workItemHandler type="org.jugvale.jbpm.workitemhandler.UpisDrugiBazaItemHandler" name="UpisDrugiBazaItemHandler"/>
+        <workItemHandler type="org.jugvale.jbpm.workitemhandler.ProslijediMailomItemHandler" name="ProslijediMailomItemHandler"/>
       </workItemHandlers>
     </ksession>
   </kbase>
