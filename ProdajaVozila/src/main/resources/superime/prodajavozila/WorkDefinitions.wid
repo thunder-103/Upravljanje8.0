@@ -13,7 +13,7 @@ import org.drools.core.process.core.datatype.impl.type.ObjectDataType;
     "displayName" : "Upis Prvi!",
     "icon" : "defaultemailicon.gif",
     "results" : [
-        "podatak" : new StringDataType()
+        "podatak" : new ObjectDataType()
     ]
   ],
     [
