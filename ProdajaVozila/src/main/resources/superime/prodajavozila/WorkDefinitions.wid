@@ -19,7 +19,10 @@ import org.drools.core.process.core.datatype.impl.type.ObjectDataType;
     [
    "name" : "UpisDrugiBazaItemHandler",
     "displayName" : "Upis Drugi!",
-    "icon" : "defaultemailicon.gif"
+    "icon" : "defaultemailicon.gif",
+    "results" : [
+        "podatak" : new ObjectDataType()
+    ]
   ],
   [
    "name" : "ProslijediMailomItemHandler",
